@@ -1,0 +1,85 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 20px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+#menu {
+  margin: 30px;
+}
+
+button {
+  margin: 8px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background: #e91e63;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ad1457;
+  transform: scale(1.05);
+}
+
+.game {
+  display: none;
+  margin-top: 20px;
+  animation: fadeIn 0.5s;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  background: #2c3e50;
+  color: #f1c40f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.cell:hover {
+  background: #34495e;
+}
+
+canvas {
+  border: 3px solid white;
+  background: black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#status {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
